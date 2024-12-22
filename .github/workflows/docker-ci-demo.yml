@@ -17,7 +17,7 @@ jobs: # 작업 지정
         id: docker_meta # 변수값으로 하위 코드에서 output으로 사용 가능
         uses: crazy-max/ghaction-docker-meta@v1 # 사용할 동작(docker-meta)
         with: # 동작에 대한 input값 사용 선언
-          images: leecloudo/nodejs-ci # 사용할 docker repository (계정/저장소)
+          images: seokmingg/nodejs-ci # 사용할 docker repository (계정/저장소)
           tag-semver: | # 태그로 사용할 버전 정보
             {{version}}
             {{major}}.{{minor}}
